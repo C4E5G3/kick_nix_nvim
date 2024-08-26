@@ -14,6 +14,8 @@ if fn.has('termguicolors') then
   opt.termguicolors = true
 end
 
+vim.cmd [[colorscheme onedark]]
+
 -- See :h <option> to see what the options do
 
 -- Search down into subfolders
@@ -62,7 +64,7 @@ vim.diagnostic.config {
         return prefix_diagnostic('⚠', diagnostic)
       end
       if severity == vim.diagnostic.severity.INFO then
-        return prefix_diagnostic('ⓘ', diagnostic)
+        return prefix_diagnosticc('ⓘ', diagnostic)
       end
       if severity == vim.diagnostic.severity.HINT then
         return prefix_diagnostic('󰌶', diagnostic)

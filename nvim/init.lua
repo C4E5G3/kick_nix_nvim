@@ -14,7 +14,7 @@ if fn.has('termguicolors') then
   opt.termguicolors = true
 end
 
-vim.cmd [[colorscheme onedark]]
+vim.cmd [[colorscheme base16-classic-dark]]
 
 -- See :h <option> to see what the options do
 

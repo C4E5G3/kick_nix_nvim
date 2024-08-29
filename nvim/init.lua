@@ -3,13 +3,11 @@ local fn = vim.fn
 local opt = vim.o
 local g = vim.g
 
--- <leader> key. Defaults to `\`. Some people prefer space.
 g.mapleader = ' '
 g.maplocalleader = ' '
 
 opt.compatible = false
 
--- Enable true colour support
 if fn.has('termguicolors') then
   opt.termguicolors = true
 end
@@ -17,8 +15,6 @@ end
 vim.cmd [[colorscheme base16-classic-dark]]
 
 -- See :h <option> to see what the options do
-
--- Search down into subfolders
 opt.path = vim.o.path .. '**'
 
 opt.number = true
